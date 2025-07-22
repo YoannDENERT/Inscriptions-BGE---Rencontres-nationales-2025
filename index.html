@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carte Interactive BGE</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .container { display: flex; gap: 40px; }
+    .carte-container { position: relative; max-width: 60%; }
+    .carte-container img { width: 100%; height: auto; }
+    .point { position: absolute; width: 25px; height: 25px; cursor: pointer; opacity: 0; }
+    .point:hover { outline: 2px solid red; opacity: 0.6; }
+    .liste-structures { max-width: 30%; }
+    .liste-structures ul { list-style: none; padding: 0; }
+    .liste-structures li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Carte Interactive des Structures BGE</h1>
+  <div class="container">
+    <div class="carte-container">
+      <img src="bge_carte.jpg" alt="Carte des régions BGE">
+
+      <!-- 31 zones positionnées -->
+      <a href="https://docs.google.com/spreadsheets/d/1g3N_w7GSoU4x4T4D2eXpHggTqsGvLkrhjjLaI3qlZtk/edit" target="_blank"><div class="point" style="top: 26%; left: 49%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1uoigd8aYqrEJupv1tMDaGxm-DPsifgnn8DVAbzfdlzs/edit" target="_blank"><div class="point" style="top: 21%; left: 60%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1MUtTkVf5_xT3syH9z8ZNFhQcJSMg9fwT3CfC2SrRuCo/edit" target="_blank"><div class="point" style="top: 32%; left: 45%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1-1lEEUvqcnGBarFH4VclvN86C6DKgwNaBt5oRbYq8bE/edit" target="_blank"><div class="point" style="top: 27%; left: 47%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1w1HDIkaXkID3RESBFY5gJKVBrMMZ_c1jnfiCEh35h5Q/edit" target="_blank"><div class="point" style="top: 22%; left: 40%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1gteza0do0FRfuLL7wgbHXRUxaoY62fFeg_4m7DOWmKs/edit" target="_blank"><div class="point" style="top: 38%; left: 45%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1gRS1P_kQfGkFbYaSWjaIUssPtEahvjruBQjjO9KdB14/edit" target="_blank"><div class="point" style="top: 19%; left: 55%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1mwp7gBc3-pOdkuz5fL3fErxnIoJIm1lWDlTLXRFboEA/edit" target="_blank"><div class="point" style="top: 85%; left: 70%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1OdIalmJVGjcqaDRRuURJHwgCEZ9ePWxcs7nDU_riRhg/edit" target="_blank"><div class="point" style="top: 68%; left: 68%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1JtHqGNTq_u4sLUtKgWhO3u2IZ1ME1sX-KuooXWZuSMk/edit" target="_blank"><div class="point" style="top: 33%; left: 56%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1nYI0BNlrLKFgd0UK9hebefP9fV33WmO6FDfmODGz_68/edit" target="_blank"><div class="point" style="top: 14%; left: 53%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1gSm1pqh2hl3dn8sNMrIfzpylABJ6lfEePj3uYWaUkPY/edit" target="_blank"><div class="point" style="top: 30%; left: 62%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1h2c8EVJxl63l31wzI_m2viKFFX1Bhb2qaUgQT4CSM5o/edit" target="_blank"><div class="point" style="top: 90%; left: 10%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1KFQObt21IEb8vNTCVbLfzqZciH7ugW_xYsEr3yk6AT8/edit" target="_blank"><div class="point" style="top: 17%; left: 48%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1CXgbu7bzfAP_97tAGUQgYgdcm31rW66YSQYiG_lqS3w/edit" target="_blank"><div class="point" style="top: 70%; left: 20%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1g3lM1wF0PzzqwoOu0_PTXBC2QR__1cDGpaqE5h9tTxE/edit" target="_blank"><div class="point" style="top: 42%; left: 40%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1WfjIP7BVWCNWxaipXMGMZLsGqCiKnZay_VjXZ1rroxc/edit" target="_blank"><div class="point" style="top: 16%; left: 44%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1fDHvSkr9HTya1D9qUBQ0nhRmAbqgtFgQhwSiYo90lh4/edit" target="_blank"><div class="point" style="top: 93%; left: 78%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1zawJvbBcEaCj6LsyNYg2cKitdAkJdtbtqXwzD7F_O4E/edit" target="_blank"><div class="point" style="top: 35%; left: 50%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1eMp11X5ghIKqp0tBqmVVJWHgEBKtH4PnKjvpAzmjVTQ/edit" target="_blank"><div class="point" style="top: 20%; left: 40%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1KK4od6N3FdzV93P9quqSCItOBVUH5lh1w7Tgej8-IqY/edit" target="_blank"><div class="point" style="top: 44%; left: 25%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1mRpzojLelnXl8VF3sEZCmkPGuU6hwIDvVmw_VmohR94/edit" target="_blank"><div class="point" style="top: 55%; left: 25%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1QhScecGU3JmqvDsULNxXijnp_AkJM5LQJ03-VtK5DeA/edit" target="_blank"><div class="point" style="top: 40%; left: 50%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1XPUdaDagiknNdGvG4G_ymeZ1YUxXSk78LbWfUkTMDyU/edit" target="_blank"><div class="point" style="top: 16%; left: 50%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/17nwf-YRKvHcv7ktvUDNffycXG5Xjlp4fQSztL6-nc_E/edit" target="_blank"><div class="point" style="top: 72%; left: 60%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1-jsoIUhhFMJrv-uWyq49F1u7bPKgJpzrg1-DXJWH-Ak/edit" target="_blank"><div class="point" style="top: 60%; left: 20%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1cK0bY5AzktWz2xYHbE0EXDMIsmzduXbPZIFfBi-UdnA/edit" target="_blank"><div class="point" style="top: 65%; left: 40%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/1cdoAkarevwbkajG_5OSlw7IxRQFHkHfHzGZN28HfxEI/edit" target="_blank"><div class="point" style="top: 35%; left: 44%;"></div></a>
+      <a href="https://docs.google.com/spreadsheets/d/10RDqIxnj3fDpv8C6SXHzB51NAm73FR5ZlJJeqLhwwZc/edit" target="_blank"><div class="point" style="top: 34%; left: 41%;"></div></a>
+    </div>
+
+    <div class="liste-structures">
+      <h3>Structures BGE</h3>
+      <ul>
+        <li>1. BGE ADIL</li>
+        <li>2. BGE ALSACE-LORRAINE</li>
+        <li>3. BGE PAYS DE LA LOIRE</li>
+        <li>4. BGE AURA</li>
+        <li>5. BGE BERRY TOURAINE</li>
+        <li>6. BGE BRETAGNE</li>
+        <li>7. BGE CATALOGNE LANGUEDOC</li>
+        <li>8. BGE CHAMPAGNE-ARDENNES</li>
+        <li>9. BGE CORSE</li>
+        <li>10. BGE COTE D’AZUR</li>
+        <li>11. BGE COTE D’OR, SAONE ET LOIRE AIN</li>
+        <li>12. BGE FLANDRE CREATION</li>
+        <li>13. BGE FRANCHE COMTE</li>
+        <li>14. BGE GUYANE</li>
+        <li>15. BGE HAUTS DE FRANCE</li>
+        <li>16. BGE LANDES</li>
+        <li>17. BGE LIMOUSIN POITOU CHARENTES</li>
+        <li>18. BGE LITTORAL OPALE</li>
+        <li>20. BGE MAYOTTE</li>
+        <li>21. BGE NIEVRE-YONNE</li>
+        <li>22. BGE NORMANDIE</li>
+        <li>23. BGE OUEST AUDOIS</li>
+        <li>24. BGE OUEST HERAULT</li>
+        <li>25. BGE PARIF</li>
+        <li>26. BGE PICARDIE</li>
+        <li>27. BGE PROVENCE ALPES MEDITERRANEE</li>
+        <li>28. BGE PYRENEES ATLANTIQUE</li>
+        <li>29. BGE SUD OUEST</li>
+        <li>30. BGE TERRES DE LOIRE</li>
+        <li>31. BGE YVELINES</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
